@@ -28,4 +28,39 @@ Martin's Deliverables for next Meeting:
 - Do some toy coding with about 10 known descriptors & 10 random ones to test the PCA code and then scale up the code to do the full 1200
 - OpenMP could be useful here
 
+## Literature Review and Project Scheduling
 
+To aid in my Project Approval and to get initial feedback from my supervisor I decided to write up my literature review during Week 10. This gave me time to revise my literature review and to submit the first draft to my supervisor before our meeting on Friday 1st  December.  Through the process of writing the literature review I have refined my project direction and scope. I also made a Gantt chart of the projected tasks to be completed to get a better idea of the scope and duration of this project. The Research Plan section of my Literature Review combined with the following Gantt chart is the basis for my project schedule. I plan to have a complete structure-percept dataset with some initial PCA completed for our next meeting at the end of Week 11. 
+
+A Literature Review Document is due to be submitted for CA640 at the end of the semester. I plan to revise my Literature Review with feedback from my CA685 supervisor before submitting for CA640.
+
+![Gantt](https://gitlab.computing.dcu.ie/kealyd2/2018-mcm-kealyd2/raw/master/docs/blog/images/GanttChartDenisKealy.png)
+
+## Second Supervisor Meeting
+
+I met with Martin Crane on the 24th of November for a brief 30-minute session. We discussed my progress thus far and in particular, we went over my literature review and project scheduling issues. Martin has continually expressed concern as to the scope and finishing point of such an investigation. He gave me advice on securing a minimum viable project while still working towards my ideal goal. It may not be possible to attempt all stages of my research plan and as such I will work to identify key stopping points that would yield sufficient results or new knowledge. I was unable to fully augment the structure-percept dataset with the appropriate chemical descriptor sets. We spoke about contacting researchers in the U.S who have collected an appropriate dataset for this investigation. This data could be used as our training data or it could be combined with freely available data sources to form the largest dataset on which such experimentation has ever been carried out. Differences between data sources remains an immediate challenge. I have decided to do some initial PCA on the dataset and to use this work for my Data Visualisation Assignment (CA682). This allows me to spend more time exploring and visualising this dataset before I begin training models with the data.
+
+## Practicum Approval Panel Presentation
+
+I completed my Practicum Approval Panel Presentation on Mon 4th December. Liam Touhey and Qun Liu were the two lecturers on the Panel for my timeslot. The feedback I received was similar to my supervisor's feedback - I have to be careful with the scope of this project as there are a lot of steps and quite a few potential hiccups which could hinder my progress. The main concern was that the complexity of the problem and the amount of work to be done may be too substantial for a Master's Practicum and more suited to a Ph.D. programme. I presented my idea in the following manner:
+
+- Structure-Odor Relationship - Explanation of Problem
+- Explainable AI - Explanation of Proposed Solution
+- Previous Machine Learning Experiments in this area
+	- 2015 Paper using publically available datasets
+	- 2017 Paper using private experimental dataset
+- Background of Olfaction Processing
+	- Difficulties of Problem
+	- How XAI can be used in this regard
+- Research Plan (Ideal Scenario)
+	- Data Collection & Combination
+	- Data Validation - PCA, Co-variance, Co-occurrance
+ 	- Machine Learning Training
+	- Machine Learning Testing
+	- Comparing with existing solutions 
+	- Integrating Interpretability with successful Model (Realistic Minimum Viable Project)
+	- Examination of our models outputs
+	- Discussion of Results
+	- Packaging Software Release
+
+I am taking the concerns about scope very seriously - as such I have decided re-use as much data and code as I can from previous experiments. I went to contact researchers in Rockafeller University in the U.S. over the weekend of Week 11 after my meeting with Martin. Martin's advice was: "They can only say no... or ignore you" - As neither of these outcomes would negatively affect my investigation I decided to reach out to them about their "unpublished dataset" used in a 2017 Structure-Odor-Relationship study. As it turns out a complete data set was published in a previous paper. I now have access to the full dataset used in this study - barring the chemical descriptors which I have still yet to obtain from DRAGON software or an online database. (The school of science may have a license for DRAGON which would reduce the amount of data collection/processing that I have to complete to obtain a suitable dataset for my machine learning program.)
