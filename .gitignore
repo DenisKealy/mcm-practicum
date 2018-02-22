@@ -8,3 +8,30 @@
 
 # Ignore everything in the build directory.
 build/
+
+bin/
+
+.idea
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Scrapy:
+.scrapy
+
+# Jupyter Notebook
+.ipynb_checkpoints
