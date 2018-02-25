@@ -10,7 +10,6 @@ class MoleDBSpider(scrapy.Spider):
     name = 'MoleDB'
     start_urls = ['http://michem.disat.unimib.it/mole_db/']
     data = json.load(open('/Users/admin/workspace/ScentScraper/scrapy_env/scrapyScent/flavornet.json'))
-    keller_data = pandas.read_excel('/Users/admin/workspace/ScentScraper/scrapy_env/data/KellerData.xlsx')
 
     # Trying to overwrite the default start_requests method
     # def start_requests(self):
@@ -28,8 +27,10 @@ class MoleDBSpider(scrapy.Spider):
 
     def parse(self, response):
 
-        # THIS GENERATES REQUESTS FOR EACH CAS IN THE KELLER DATASET - 332 Mappings - 480 total
-        values = self.keller_data['Keller and Vosshall: Raw psychophysical data from 55 subjects'].values
+        keller_data = pandas.read_excel('/Users/admin/workspace/ScentScraper/scrapy_env/data/KellerData.xlsx')
+
+        # THIS GENERATES REQUESTS FOR EACH CAS IN THE KELLER DATASET - 332 Mappings from 480 total molecules
+        values = keller_data['Keller and Vosshall: Raw psychophysical data from 55 subjects'].values
         keller_cas_values = set()
         for v in values[2:1005]:
             keller_cas_values.add(v)
@@ -45,7 +46,7 @@ class MoleDBSpider(scrapy.Spider):
                 form_request.meta['CAS_no'] = value
                 yield form_request
 
-        # THIS GENERATE REQUESTS FOR EACH CAS FROM OUR FLAVORNET DATASET - 306 Mappings - 739 Total
+        # THIS GENERATE REQUESTS FOR EACH CAS FROM OUR FLAVORNET DATASET - 306 Mappings from 739 Total molecules
         # for cj, molecule in enumerate(self.data):
         #         form_request = scrapy.FormRequest.from_response(
         #             response,
