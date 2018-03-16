@@ -80,9 +80,9 @@ The next post talks about the analysis of this network.
 
 From a research article titled: *"Understanding the Odour Spaces: A Step towards Solving Olfactory Stimulus-Percept Problem"* - published in the PLOS One journal in 2015: doi.org/10.1371/journal.pone.0141263
 
-*"We can describe each database as an undirected graph or network, where nodes are perceptual descriptors and an edge is shared by two perceptual descriptors if they have occurred together in the perceptual description of a molecule."*
+> "We can describe each database as an undirected graph or network, where nodes are perceptual descriptors and an edge is shared by two perceptual descriptors if they have occurred together in the perceptual description of a molecule."
 
-*"**The important questions to be addressed with respect to the perceptual network are about its structural organisation, particularly, its difference from a random network and its degree distribution**"*
+> "The important questions to be addressed with respect to the perceptual network are about its structural organisation, particularly, its difference from a random network and its degree distribution"
 
 So for each dataset I aim to calculate the same network characteristics that these researchers used in their analysis and replicate their work on both their data (flavornet, good scents company), as well as newly released data(keller). In the supplementary materials of the PLOS One publication they included detailed methods of how they calculated the network statistics and how they compared it against random networks.
 
@@ -90,15 +90,15 @@ The aim of this exercise is to understand the quality of our data, and understan
 
 ### Data Sources analysed by Kumar Et al. 2015
 
-<img src="images/database_descriptions.png">
+<img src="images/database_descriptions.PNG">
 
 ### Network Characteristics from Kumar Et al. 2015
 
 We are not going to calculate every column below - just the basic ones and most importantly the clustering coefficient with which we can compare our networks with randomly generated networks using the Erdos-Rényi method for generating random networks. From the paper:
 
-*"The clustering coefficient can be used to differentiate the properties of the nodes from a random network. We have calculated the weighted clustering coefficient proposed by Barrat et al.[7]."*
+> "The clustering coefficient can be used to differentiate the properties of the nodes from a random network. We have calculated the weighted clustering coefficient proposed by Barrat et al.[7]."
 
-<img src="images/network_descriptions.png">
+<img src="images/network_descriptions.PNG">
 
 #### Columns
  
@@ -136,6 +136,8 @@ The slight differences in the number of nodes/edges collected (2015 vs present) 
 I have been having trouble collecting the molecular descriptors for my molecules of interest - although I have the perceptual information I still needed the physical information pertaining to our smelly molecules. Initially, I thought the path of least resistance would be to try scrape the information from a public online database. Using scripts written in python I attempted for weeks to scrape this information and ran into several problems, mostly of my own making but one problem would have to be addressed - many of the molecules in my datasets were not listed in the database. I only discovered this, however, after weeks of attempts. Plan B was to test E-Dragon and thankfully there were very few misses.
 
 So for E-DRAGON I needed either a 3D molecular file for the molecules in question or something called a SMILES string. This string can be converted to a 3D molecule file and uploaded to E-Dragon. SMILES stands for simplified molecular-input line-entry system and is used to describe a molecular structure using ASCII characters. Here is an example - Nicotine:
+
+
 
 `CN1CCC[C@H]1c2cccnc2`
 
