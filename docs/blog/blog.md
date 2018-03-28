@@ -74,7 +74,7 @@ Literature Review Rework - My project will now be more focussed on statistical a
 
 From one dataset I created an interactive visualisation which depicts all the smell cooccurrences in the database; each node represents a smell and edge between nodes represents a cooccurrence of those two smells. In addition the length, elasticity and width of the edges are multiplied by their weight in the corresponding cooccurrence matrix - the length is inversely adjusted. This means that more commonly cooccurring smells stick together with tight, fat edges - these effects had to be tweaked such as the decision to leave out cooccurrences that only occurred once. Omitting single cooccurrences vastly improved the visibility, user interaction and message of the visualisation.
 
-Video of explaining the interactive visualisation is available below:
+Video of explaining the interactive visualisation is available below: Visualisation available [here](https://bl.ocks.org/DenisKealy/21ff29a8c3ff97409fc0e0a8fec08912).
 
 [![Interactive Smell Co-Occurrence Network](https://img.youtube.com/vi/14_Yv11JAZQ/0.jpg)](https://www.youtube.com/watch?v=14_Yv11JAZQ)
 
