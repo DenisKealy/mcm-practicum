@@ -4,12 +4,12 @@
 
 # Acquiring a Supervisor
 
-On 24th October, I approached Martin Crane (of the DCU School of Computing) concerning the ideas I have for my practicum project. I uploaded an initial project proposal document which outlined multiple project directions to my gitlab repository. I met with Martin on the 3rd of November - he shared with me his concerns about the complexity of the project as well as his concerns about his fit for this type of project.  He sent me off to further investigate project ideas and to narrow down my range of project directions. We decided to set up a meeting with Tim Downing in DCU’s School of Science to avail of an expert opinion in the domain of Bioinformatics for the purposes of further investigating the complexity and feasibility of such a project.
+On 24th October, I approached Martin Crane (of the DCU School of Computing) concerning the ideas I have for my practicum project. I uploaded an initial project proposal document which outlined multiple project directions to my gitlab repository. I met with Martin on the 3rd of November - he shared with me his concerns about the complexity of the project as well as his concerns about his fit for this type of project.  He sent me off to further investigate project ideas and to narrow down my range of project directions. We decided to set up a meeting with Tim Downing in DCU's School of Science to avail of an expert opinion in the domain of Bioinformatics for the purposes of further investigating the complexity and feasibility of such a project.
 
 
 # Meeting with School of Science faculty
 
-I met with Tim Downing on 8th November to discuss my project ideas. For this meeting, I had focused on a singular idea which, Martin had expressed the most interest in - Explainable AI and the Structure-Odour-Relationship. I went through two papers (which were most relevant to my idea) with Tim and I showed him the data sources that I was considering using for my experimentation. He outlined his concern that the genomic and proteomic data I wanted to use was incomplete and out of date for the fast-moving field of Bioinformatics. We settled on a configurable Explainable AI system which takes molecular descriptors as it’s input to try and classify molecules based on this information. In our case we are trying to classify the molecules perceived scent but Tim noted that this approach could be used to help solve a broad range of problems such as predicting the effects of a new drug or predicting the toxicity of unknown molecules. This approach to solving the problem allows us to abstract the biological details of human olfaction processing as we are only concerned with how our machine classifies smell molecules - not the underlying biological processes by which we humans arrive at our perception.
+I met with Tim Downing on 8th November to discuss my project ideas. For this meeting, I had focused on a singular idea which, Martin had expressed the most interest in - Explainable AI and the Structure-Odour-Relationship. I went through two papers (which were most relevant to my idea) with Tim and I showed him the data sources that I was considering using for my experimentation. He outlined his concern that the genomic and proteomic data I wanted to use was incomplete and out of date for the fast-moving field of Bioinformatics. We settled on a configurable Explainable AI system which takes molecular descriptors as it's input to try and classify molecules based on this information. In our case we are trying to classify the molecules perceived scent but Tim noted that this approach could be used to help solve a broad range of problems such as predicting the effects of a new drug or predicting the toxicity of unknown molecules. This approach to solving the problem allows us to abstract the biological details of human olfaction processing as we are only concerned with how our machine classifies smell molecules - not the underlying biological processes by which we humans arrive at our perception.
 
 # Project Proposal Submission
 
@@ -74,6 +74,10 @@ Literature Review Rework - My project will now be more focussed on statistical a
 
 From one dataset I created an interactive visualisation which depicts all the smell cooccurrences in the database; each node represents a smell and edge between nodes represents a cooccurrence of those two smells. In addition the length, elasticity and width of the edges are multiplied by their weight in the corresponding cooccurrence matrix - the length is inversely adjusted. This means that more commonly cooccurring smells stick together with tight, fat edges - these effects had to be tweaked such as the decision to leave out cooccurrences that only occurred once. Omitting single cooccurrences vastly improved the visibility, user interaction and message of the visualisation.
 
+Video of explaining the interactive visualisation is available below:
+
+[![Interactive Smell Co-Occurrence Network](https://img.youtube.com/vi/14_Yv11JAZQ/0.jpg)](https://www.youtube.com/watch?v=14_Yv11JAZQ)
+
 The next post talks about the analysis of this network.
 
 # Cooccurrence Network Analysis 
@@ -94,7 +98,7 @@ The aim of this exercise is to understand the quality of our data, and understan
 
 ### Network Characteristics from Kumar Et al. 2015
 
-We are not going to calculate every column below - just the basic ones and most importantly the clustering coefficient with which we can compare our networks with randomly generated networks using the Erdos-R�nyi method for generating random networks. From the paper:
+We are not going to calculate every column below - just the basic ones and most importantly the clustering coefficient with which we can compare our networks with randomly generated networks using the Erdos-Rényi method for generating random networks. From the paper:
 
 > "The clustering coefficient can be used to differentiate the properties of the nodes from a random network. We have calculated the weighted clustering coefficient proposed by Barrat et al.[7]."
 
@@ -138,7 +142,6 @@ I have been having trouble collecting the molecular descriptors for my molecules
 So for E-DRAGON I needed either a 3D molecular file for the molecules in question or something called a SMILES string. This string can be converted to a 3D molecule file and uploaded to E-Dragon. SMILES stands for simplified molecular-input line-entry system and is used to describe a molecular structure using ASCII characters. Here is an example - Nicotine:
 
 
-
 `CN1CCC[C@H]1c2cccnc2`
 
 <img src="images/Nicotine.png">
@@ -150,6 +153,7 @@ E-Dragon would only accept 150 molecules at a time so I split my data up into 4 
 We now have all the data for our most recent dataset (raw 2017 perceptual experiment - data for DREAM challenge). Next up is to look again at the timeline of the Structure-Odor-Relationship to summarise (in a digestible blog style format) what has been done and what we are attempting to do.
 
 # Timeline of the Problem
+
 
 
 
