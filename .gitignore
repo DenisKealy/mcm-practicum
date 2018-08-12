@@ -32,6 +32,7 @@ venv.bak/
 .scrapy
 
 # Jupyter Notebook
+jupyter/
 .ipynb_checkpoints
 
 # Distribution / packaging

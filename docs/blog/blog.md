@@ -1,4 +1,4 @@
-# Blog: Analysis of the Structure-Odour-Relationship
+# Blog: Analysis of the Structure-Odor-Relationship
 
 **Denis Kealy**
 
@@ -152,7 +152,9 @@ E-Dragon would only accept 150 molecules at a time so I split my data up into 4 
 
 We now have all the data for our most recent dataset (raw 2017 perceptual experiment - data for DREAM challenge). Next up is to look again at the timeline of the Structure-Odor-Relationship to summarise (in a digestible blog style format) what has been done and what we are attempting to do.
 
-# Timeline of the Problem
+# State of the blog
+
+This blog serves as an introduction to the project and outlines some of the early problems encountered in the course of the investigation. I ceased updating the blog due to its specified lack of importance but these early posts have served me well in retracing my own steps and clarifying the reasons for early decisions made in the investigation lifecycle.
 
 
 
