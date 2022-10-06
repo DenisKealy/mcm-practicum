@@ -1,54 +1,20 @@
-# MCM PRACTICUM
+# M.Sc. in Computing Practicum (Data Analytics Major)
 
-This is a template for MCM practicums.  Please read these instructions carefully.
+## Introduction
 
-This file is written in
-[markdown](https://guides.github.com/features/mastering-markdown/).  Markdown
-is a suitable format for documents stored in git repositories.
+My research practicum entailed an investigation into computational discovery. Using interpretable machine learning methods my goal was to investigate viable theories of the Structure-Odour-Relationship of olfaction.
+ - [Bioinformatics, Neuroscience, Scientific Writing & Machine Learning]
+ 
+ ![Overview Image](./img/MCM.png)
 
-## Instructions
+## Overview
 
-You *must* do the following:
+Using interpretable machine learning methods, the goal of my research was to investigate viable theories of the structure-odor relationship (SOR) of olfaction. Previous SOR studies have involved the collection and modelling of a structure-percept data set. This data set maps the physical descriptors of a molecule (e.g. molecular weight) to a single, or set, of perceptual descriptors (linguistic description of a smell, e.g. ”grass”). Using this data as a training set, machine learning programs have been shown to achieve high predictive accuracy for the classification of novel and unknown odorant molecules. For the purposes of elucidating the underlying mechanics of olfaction, I proposed extending these machine learning algorithms to improve their interpretability. Explainable AI is a concept that places a requirement on the algorithm to describe/justify its output; In the context of the SOR problem, this approach helped in the causal analysis of the multivariate interactions between chemical compounds and human olfactory systems by providing a generalized solution for studying any structure-dependent chemical interaction with a complex system.
 
-1 - Fork this repo.
+## Paper
 
-2 - Rename your fork using the format (all lower case letters)
+Link to paper - https://github.com/DenisKealy/mcm-practicum/blob/master/practicum%20paper/mcm_practicum_paper.pdf
 
-    2018-mcm-username
+## Presentation
 
-replacing `username` with your School of Computing login name.
-
-For example, if Stephen Blott were to be doing a fourth-year project, he would rename
-his repo as:
-
- 2018-mcm-sblott
-
-You can rename your repo by selecting *Edit Project* from the drop-down menu
-(with a gear icon) on the top right of your project's home page.  Change the
-*Project name* field **and** the *Path*.
-
-You should also update the *Project description*.
-
-3 - This directory has two sub-directories.
-
-- All of your source code should be placed in the `src` sub-directory.
-
-- All of your documentation should be placed in the `docs` sub-directory.
-
-- Your project blog should be placed in the `blog` sub-directory. 
-
-
-4 - There is further important documentation in the `docs` directory.  Read that next.
-
-When you are have followed all of these instructions and are sure that you
-understand what is expected, you may replace the contents of this file with a
-brief description of your project (two or three paragraphs).
-
-## Additional Resources
-
-- Git [cheat sheet](https://gitlab.computing.dcu.ie/sblott/local-gitlab-documentation/blob/master/cheat-sheet.md)
-- Gitlab [CI environment](https://gitlab.computing.dcu.ie/sblott/docker-ci-environment) and it's [available software](https://gitlab.computing.dcu.ie/sblott/docker-ci-environment/blob/master/Dockerfile)
-- Example projects with CI configured:
-   * [Python](https://gitlab.computing.dcu.ie/sblott/test-project-python)
-   * [Java](https://gitlab.computing.dcu.ie/sblott/test-project-java)
-   * [MySql](https://gitlab.computing.dcu.ie/sblott/test-project-mysql)
+Link to slides - https://github.com/DenisKealy/mcm-practicum/blob/master/docs/documentation/MCM%20Practicum%20Presentation.pdf
